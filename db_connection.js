@@ -4,10 +4,10 @@ var con = mysql.createConnection({
     host: "localhost",
     user: "arian",
     password: "password",
-    database: "node"
+    database: "chatroom"
 });
 
-exports.con;
+module.exports = con;
 
 con.connect(function(err) {
     if (err) throw err;
